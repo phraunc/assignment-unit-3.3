@@ -30,11 +30,11 @@ console.log('5. Adding 25 to supplyChanges.', supplyChanges);
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
 
-for(i=0; i<supplyChanges.length; i++){
-    console.log('Showing supplyChanges..', supplyChanges[i]);
-    if(supplyChanges[i] > 0){ console.log('Added x parts')};
-    if(supplyChanges[i] == 0){ console.log('No Change.')};
-    if(supplyChanges[i] < 0){ console.log('removed x parts')};
+for(x= 0; x < supplyChanges.length; x++)
+{
+    if( supplyChanges[x] > 0) {console.log('Added parts',supplyChanges[x])};
+    if (supplyChanges[x] == 0) {console.log('No Change.')};
+    if( supplyChanges[x] < 0){console.log('Parts Removed', [x])};
 }
 
 // STRETCH GOALS
@@ -63,11 +63,12 @@ console.log('8. Total supplies available is:', (sum));
 
 let boxes = 0;
 let totalParts = 572;
+let leftovers = boxes%totalParts;
+
 
 while(boxes < totalParts){
-    console.log('9. Filling boxes with a "while" loop', boxes);;
+    console.log('9. Filling boxes with a "while" loop', boxes);
     boxes +=7;
-    
-
 }
+console.log('Parts that are left over is:', leftovers);
 
